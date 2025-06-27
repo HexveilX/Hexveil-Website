@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexveilX - Web Developer & AI Explorer</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="HexveilX - Web developer & AI explorer crafting digital experiences with passion and precision. Specializing in JavaScript, Python, React, and modern web technologies.">
+    <meta name="keywords" content="HexveilX, Web Developer, AI Explorer, JavaScript, Python, React, Portfolio, Frontend Developer">
+    <meta name="author" content="HexveilX">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HexveilX - Web Developer & AI Explorer">
+    <meta property="og:description" content="Web developer & AI explorer crafting digital experiences with passion and precision. Check out my portfolio featuring AI chatbots, e-commerce platforms, and innovative web solutions.">
+    <meta property="og:image" content="/og-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://hexveilx.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HexveilX Portfolio">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HexveilX - Web Developer & AI Explorer">
+    <meta name="twitter:description" content="Web developer & AI explorer crafting digital experiences with passion and precision.">
+    <meta name="twitter:image" content="/og-preview.png">
+    <meta name="twitter:creator" content="@HexveilX">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/og-preview.png">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        // Wait for React to load, then add smooth scrolling
+        setTimeout(() => {
+            // Smooth scrolling for navigation links
+            document.addEventListener('click', function(e) {
+                if (e.target.matches('a[href^="#"]')) {
+                    e.preventDefault();
+                    const target = document.querySelector(e.target.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        }, 1000);
+    </script>
+</body>
+</html>
